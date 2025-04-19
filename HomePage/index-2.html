@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AsanIlm | Education Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/typography.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/settings.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/navigation.css">
+  <style>
+  body {
+    margin: 0;
+    background: #000;
+  }
+  canvas {
+    display: block;
+  }
+</style>
+</head>
+
+<body style="margin:0; background-color:#0d0d0d; font-family:'Segoe UI', sans-serif; color:#fff; overflow-x:hidden;">
+
+  <!-- Header -->
+  <header class="header rs-nav header-transparent">
+		<div class="top-bar">
+			<div class="container">
+				<div class="row d-flex justify-content-between">
+					<div class="topbar-left">
+						<ul>
+							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Ask a Question</a></li>
+							<li><a href="javascript:;"><i class="fa fa-envelope-o"></i>Support@website.com</a></li>
+						</ul>
+					</div>
+					<div class="topbar-right">
+						<ul>
+							<li>
+								<select class="header-lang-bx">
+									<option data-icon="flag flag-uk">English UK</option>
+									<option data-icon="flag flag-us">English US</option>
+								</select>
+							</li>
+							<li><a href="login.html">Login</a></li>
+							<li><a href="register.html">Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sticky-header navbar-expand-lg">
+            <div class="menu-bar clearfix">
+                <div class="container clearfix d-flex  justify-content-between align-items-center">
+					<!-- Header Logo ==== -->
+					<div class="menu-logo" style="display: flex; align-items: center; justify-content: center;">
+						<a href="index.html" style="font-size:2rem; font-weight:bold; color:#fff; display:flex; align-items:center;">
+              AsanIlm
+              <img src="assets/images/book.png" alt="" style="width: 40px; height: 40px;">
+            </a>
+					</div>
+					<!-- Mobile Nav Button ==== -->
+                    <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<!-- Navigation Menu ==== -->
+                    <div class="menu-links navbar-collapse collapse" id="menuDropdown">
+                        <ul class="nav navbar-nav">	
+							<li class="active"><a href="index.html">Home </a></li>
+							<li><a href="javascript:;">Pages <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+									<li><a href="about-1.html">About </a></li>						
+									<li><a href="faq-1.html">FAQ's </a></li>
+									<li><a href="contact-1.html">Contact Us </a></li>
+									<li><a href="portfolio.html">Portfolio</a></li>
+									<li><a href="profile.html">Profile</a></li>
+									<li><a href="membership.html">Membership</a></li>
+									<li><a href="error-404.html">404 Page</a></li>
+								</ul>
+							</li>
+							<li class="add-mega-menu"><a href="javascript:;">Our Courses <i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu add-menu">
+									<li class="add-menu-left">
+										<h5 class="menu-adv-title">Our Courses</h5>
+										<ul>
+											<li><a href="courses.html">Courses </a></li>
+											<li><a href="courses-details.html">Courses Details</a></li>
+											<li><a href="profile.html">Instructor Profile</a></li>
+											<li><a href="event.html">Upcoming Event</a></li>
+											<li><a href="membership.html">Membership</a></li>
+										</ul>
+									</li>
+									<li class="add-menu-right">
+										<img src="assets/images/adv/adv.jpg" alt=""/>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-social-link">
+								<a href="javascript:;"><i class="fa fa-facebook"></i></a>
+								<a href="javascript:;"><i class="fa fa-google-plus"></i></a>
+								<a href="javascript:;"><i class="fa fa-linkedin"></i></a>
+							</li>
+						</ul>
+                    </div>
+					<!-- Navigation Menu END ==== -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+  <!-- HERO -->
+  <section style="position:relative; top: 120px; min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#0d0d0d; width:100%; padding:20px;">
+    <div style="width:100%; max-width:1200px; display:flex; flex-direction:column; gap:10px; padding:20px;">
+      <div style="width:100%; text-align:center;">
+        <h1 id="heroTitle" style="font-size:clamp(2rem, 5vw, 4rem); margin-bottom:20px; transform:scale(0.5) rotateY(90deg); opacity:0;">AsanIlm - Learn Smarter</h1>
+        <p id="heroSub" style="font-size:clamp(1rem, 2vw, 1.4rem); color:#6c5ce7;; transform:translateY(50px); opacity:0;">Your Premier Education Platform for Professional Development</p>
+        <p id="heroSub" style="font-size:clamp(1rem, 2vw, 1.4rem); color:#ccc; transform:translateY(50px); opacity:0;">Join thousands of learners worldwide accessing high-quality courses taught by industry experts. Master new skills at your own pace with our interactive learning platform.</p>
+        <button id="heroBtn" style="margin-top:30px; padding:clamp(10px, 2vw, 14px) clamp(20px, 4vw, 32px); font-size:clamp(0.9rem, 1.5vw, 1rem); background:#ffffff0f; border:1px solid #444; border-radius:10px; color:#fff; cursor:pointer; transition:0.3s;">Get Started</button>
+      </div>
+      <div style="width:100%; min-height:200px;" class="robot">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.5/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/AqtlWJlNbO-ZMkvz/scene.splinecode"></spline-viewer>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- FEATURES -->
+  <section style="padding:120px 20px; background:linear-gradient(145deg, #111, #1a1a1a);">
+    <h2 style="text-align:center; font-size:3rem; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom:60px;">Why Choose AsanIlm?</h2>
+    
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:30px; max-width:1200px; margin:0 auto;">
+      <div class="feature tilt" style="background:rgba(108, 92, 231, 0.1); padding:40px; border-radius:24px; backdrop-filter:blur(10px); border:1px solid #6c5ce7; transform-style: preserve-3d; transition:all 0.3s ease; cursor:pointer; box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2);" onmousemove="handleTilt(event, this)" onmouseleave="resetTilt(this)">
+        <i class="fas fa-graduation-cap" style="font-size:2.5rem; color:#6c5ce7; margin-bottom:20px; transform: translateZ(20px);"></i>
+        <h3 style="margin-bottom:15px; font-size:1.5rem; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; transform: translateZ(20px);">Quality Education</h3>
+        <p style="color:#aaa; line-height:1.6; transform: translateZ(20px);">Access premium courses crafted by industry leaders. Our expert instructors bring real-world experience to every lesson.</p>
+      </div>
+
+      <div class="feature tilt" style="background:rgba(108, 92, 231, 0.1); padding:40px; border-radius:24px; backdrop-filter:blur(10px); border:1px solid #6c5ce7; transform-style: preserve-3d; transition:all 0.3s ease; cursor:pointer; box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2);" onmousemove="handleTilt(event, this)" onmouseleave="resetTilt(this)">
+        <i class="fas fa-clock" style="font-size:2.5rem; color:#6c5ce7; margin-bottom:20px; transform: translateZ(20px);"></i>
+        <h3 style="margin-bottom:15px; font-size:1.5rem; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; transform: translateZ(20px);">Flexible Learning</h3>
+        <p style="color:#aaa; line-height:1.6; transform: translateZ(20px);">Study at your own pace with lifetime access to courses. Our platform adapts to your schedule, not the other way around.</p>
+      </div>
+
+      <div class="feature tilt" style="background:rgba(108, 92, 231, 0.1); padding:40px; border-radius:24px; backdrop-filter:blur(10px); border:1px solid #6c5ce7; transform-style: preserve-3d; transition:all 0.3s ease; cursor:pointer; box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2);" onmousemove="handleTilt(event, this)" onmouseleave="resetTilt(this)">
+        <i class="fas fa-globe" style="font-size:2.5rem; color:#6c5ce7; margin-bottom:20px; transform: translateZ(20px);"></i>
+        <h3 style="margin-bottom:15px; font-size:1.5rem; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; transform: translateZ(20px);">Global Community</h3>
+        <p style="color:#aaa; line-height:1.6; transform: translateZ(20px);">Connect with learners worldwide. Participate in forums, live sessions, and collaborative projects to enhance your learning experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="padding:120px 20px; background:#0d0d0d;">
+    <h2 style="text-align:center; font-size:2.5rem; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom:60px;">Getting Started</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:50px; max-width:1200px; margin:0 auto;">
+      <div class="step tilt" style="width:320px; padding:40px; background:rgba(108, 92, 231, 0.1); border-radius:24px; text-align:center; border:1px solid #6c5ce7; backdrop-filter:blur(10px); transition:all 0.3s ease; cursor:pointer; box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2); transform-style: preserve-3d;" onmousemove="handleTilt(event, this)" onmouseleave="resetTilt(this)">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/create-account-illustration-download-in-svg-png-gif-file-formats--online-registration-user-register-form-sign-miscellaneous-pack-illustrations-5230166.png" alt="Create Account" style="width:180px; height:180px; margin-bottom:20px; transform: translateZ(20px);">
+        <h4 style="font-size:1.3rem; margin-bottom:15px; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; transform: translateZ(20px);">1. Create Account</h4>
+        <p style="color:#aaa; line-height:1.6; transform: translateZ(20px);">Sign up in seconds and choose your personalized learning path to begin your educational journey.</p>
+      </div>
+      
+      <div class="step tilt" style="width:320px; padding:40px; background:rgba(108, 92, 231, 0.1); border-radius:24px; text-align:center; border:1px solid #6c5ce7; backdrop-filter:blur(10px); transition:all 0.3s ease; cursor:pointer; box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2); transform-style: preserve-3d;" onmousemove="handleTilt(event, this)" onmouseleave="resetTilt(this)">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/student-choosing-course-tutor-illustration-download-in-svg-png-gif-file-formats--man-teacher-professor-online-pack-e-learning-illustrations-3626448.png" alt="Choose Courses" style="width:180px; height:180px; margin-bottom:20px; transform: translateZ(20px);">
+        <h4 style="font-size:1.3rem; margin-bottom:15px; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; transform: translateZ(20px);">2. Choose Courses</h4>
+        <p style="color:#aaa; line-height:1.6; transform: translateZ(20px);">Explore our extensive catalog featuring hundreds of expert-led courses across various disciplines.</p>
+      </div>
+      
+      <div class="step tilt" style="width:320px; padding:40px; background:rgba(108, 92, 231, 0.1); border-radius:24px; text-align:center; border:1px solid #6c5ce7; backdrop-filter:blur(10px); transition:all 0.3s ease; cursor:pointer; box-shadow: 0 10px 30px rgba(108, 92, 231, 0.2); transform-style: preserve-3d;" onmousemove="handleTilt(event, this)" onmouseleave="resetTilt(this)">
+        <img src="https://static.vecteezy.com/system/resources/previews/011/381/947/non_2x/young-man-studying-for-university-test-3d-character-illustration-png.png" alt="Start Learning" style="width:180px; height:180px; margin-bottom:20px; transform: translateZ(20px);">
+        <h4 style="font-size:1.3rem; margin-bottom:15px; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; transform: translateZ(20px);">3. Start Learning</h4>
+        <p style="color:#aaa; line-height:1.6; transform: translateZ(20px);">Dive into interactive lessons, hands-on projects, and begin your journey to success with AsanIlm.</p>
+      </div>
+    </div>
+
+    <script>
+      function handleTilt(event, element) {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = -((y - centerY) / centerY) * 10;
+        const rotateY = ((x - centerX) / centerX) * 10;
+        
+        element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+      }
+
+      function resetTilt(element) {
+        element.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+      }
+    </script>
+  </section>
+
+   <!-- GALLERY SECTION -->
+  <section style="padding:120px 20px; background:#0d0d0d;">
+    <h2 style="text-align:center; font-size:2.5rem; background: linear-gradient(90deg, #6c5ce7, #81ecec); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom:60px;">Platform Highlights</h2>
+    
+    <!-- Modal -->
+    <div id="videoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:1000;">
+      <div style="position:relative; width:90%; max-width:800px; margin:50px auto; background:#1a1a1a; padding:20px; border-radius:10px;">
+        <button onclick="closeModal()" style="position:absolute; right:10px; top:10px; background:none; border:none; color:#fff; font-size:24px; cursor:pointer;">&times;</button>
+        <div id="videoContainer" style="width:100%; margin-bottom:20px;">
+          <video id="featureVideo" style="width:100%; border-radius:5px;" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div id="modalDescription" style="color:#fff; padding:20px;">
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-container" style="max-width:1400px; margin:0 auto; display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; padding:20px;">
+      
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('interactive-learning.mp4', 'Experience our interactive learning platform with hands-on exercises and real-time feedback to enhance your understanding.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Xtex1j5RYb-eGCNuXxj66RyKSSwUiNqoIw&s" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Interactive Learning</h4>
+        </div>
+      </div>
+
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('video-lectures.mp4', 'Access high-quality video lectures from expert instructors, available 24/7 to fit your schedule.')">
+        <img src="https://arridetechnologies.com/wp-content/uploads/2021/02/online-lecture-1024x512.jpg" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Video Lectures</h4>
+        </div>
+      </div>
+
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('coding-projects.mp4', 'Build real-world projects with our guided coding exercises and get personalized code reviews.')">
+        <img src="https://miro.medium.com/v2/resize:fit:1128/0*5Q_7VXyQ8xo4Dgpp.jpg" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Coding Projects</h4>
+        </div>
+      </div>
+
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('certification.mp4', 'Earn industry-recognized certificates upon completion of our comprehensive courses.')">
+        <img src="https://codequotient.com/blog/wp-content/uploads/2020/12/6-Reasons-Why-Having-a-Professional-Coder-Certification-Is-Crucial.jpg" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Certification</h4>
+        </div>
+      </div>
+
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('forums.mp4', 'Engage in rich discussions with peers and experts in our active community forums.')">
+        <img src="https://s39613.pcdn.co/wp-content/uploads/2022/07/video-conference-vector-id1281074138.jpg" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Discussion Forums</h4>
+        </div>
+      </div>
+
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('webinars.mp4', 'Join interactive live webinars with industry experts and get your questions answered in real-time.')">
+        <img src="https://thumbs.dreamstime.com/b/girl-student-watching-free-online-courses-laptop-education-day-live-webinar-e-learning-concept-horizontal-girl-student-watching-364152276.jpg" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Live Webinars</h4>
+        </div>
+      </div>
+
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('mobile-learning.mp4', 'Learn on the go with our mobile-optimized platform and offline access capabilities.')">
+        <img src="https://www.eleapsoftware.com/wp-content/uploads/2022/02/Mobile-Learning--scaled.jpg.webp" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Mobile Learning</h4>
+        </div>
+      </div>
+
+      <div class="gallery-item tilt" style="position:relative; height:300px; border-radius:20px; overflow:hidden; transform-style:preserve-3d; cursor:pointer;" onmousemove="handleGalleryTilt(event, this)" onmouseleave="resetGalleryTilt(this)" onclick="openModal('success.mp4', 'See how our students achieve their career goals through our comprehensive learning programs.')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKKypqmmZ_9hgpVXMfZIowJ-3xSOiSRPzF-w&s" style="width:100%; height:100%; object-fit:cover; transform:translateZ(20px);">
+        <div style="position:absolute; bottom:0; left:0; right:0; padding:20px; background:linear-gradient(transparent, rgba(0,0,0,0.8)); transform:translateZ(30px);">
+          <h4 style="color:#fff; font-size:1.2rem;">Student Success</h4>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      function handleGalleryTilt(event, element) {
+        const rect = element.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = -((y - centerY) / centerY) * 15;
+        const rotateY = ((x - centerX) / centerX) * 15;
+        
+        element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.1, 1.1, 1.1)`;
+        element.style.transition = 'all 0.05s linear';
+        
+        // Add subtle shadow effect
+        element.style.boxShadow = `${-rotateY/2}px ${-rotateX/2}px 20px rgba(108, 92, 231, 0.2)`;
+      }
+
+      function resetGalleryTilt(element) {
+        element.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        element.style.transition = 'all 0.4s ease-in-out';
+        element.style.boxShadow = '0 10px 30px rgba(108, 92, 231, 0.2)';
+      }
+
+      function openModal(videoSrc, description) {
+        const modal = document.getElementById('videoModal');
+        const video = document.getElementById('featureVideo');
+        const descriptionDiv = document.getElementById('modalDescription');
+        
+        video.src = videoSrc;
+        descriptionDiv.textContent = description;
+        modal.style.display = 'block';
+        
+        // Prevent background scrolling
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('videoModal');
+        const video = document.getElementById('featureVideo');
+        
+        video.pause();
+        video.src = '';
+        modal.style.display = 'none';
+        
+        // Re-enable scrolling
+        document.body.style.overflow = 'auto';
+      }
+
+      // Close modal when clicking outside
+      document.getElementById('videoModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal();
+        }
+      });
+    </script>
+  </section>
+
+  <!-- Instructors Section -->
+  <section style="padding: 100px 20px; background: var(--dark-bg);">
+    <div style="text-align: center; margin-bottom: 60px;">
+      <h2 style="font-size: 2.8rem; color: var(--dark-text);">Meet Our Distinguished Instructors</h2>
+      <p style="color: var(--dark-text-secondary); max-width: 700px; margin: 20px auto;">Learn from industry leaders and renowned academics who bring years of expertise and real-world experience to your education journey.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
+      
+      <div style="background: var(--dark-card); border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+        <div style="height: 300px; overflow: hidden;">
+          <img src="https://media.istockphoto.com/id/1311858467/photo/head-shot-portrait-attractive-young-indian-woman-looking-at-camera.jpg?s=612x612&w=0&k=20&c=0QWC0t9uc6tptvQkWZxlFKK6hsnOxQBCobTfgkuNbLA=" alt="Dr. Sarah Johnson" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 25px;">
+          <h3 style="color: var(--dark-text); font-size: 1.4rem; margin-bottom: 10px;">Dr. Sarah Johnson</h3>
+          <p style="color: var(--primary); margin-bottom: 10px;">PhD in Computer Science, MIT</p>
+          <p style="color: var(--dark-text-secondary); font-size: 0.9rem;">Former Tech Lead at Google, specializing in AI and Machine Learning with over 50 published research papers.</p>
+        </div>
+      </div>
+
+      <div style="background: var(--dark-card); border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+        <div style="height: 300px; overflow: hidden;">
+          <img src="https://thumb.photo-ac.com/64/643d496512b71768afdef5f66980cc9f_t.jpeg" alt="Prof. Michael Chen" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 25px;">
+          <h3 style="color: var(--dark-text); font-size: 1.4rem; margin-bottom: 10px;">Prof. Michael Chen</h3>
+          <p style="color: var(--primary); margin-bottom: 10px;">Stanford University, Business School</p>
+          <p style="color: var(--dark-text-secondary); font-size: 0.9rem;">Bestselling author and entrepreneur with 20+ years of experience in business strategy and innovation.</p>
+        </div>
+      </div>
+
+      <div style="background: var(--dark-card); border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+        <div style="height: 300px; overflow: hidden;">
+          <img src="https://media.istockphoto.com/id/1164377489/photo/happy-old-mature-online-teacher-tutor-looking-at-camera.jpg?s=612x612&w=0&k=20&c=M_2Pz2cBOztuPyqKTuqe4ANMoo7s0t3pjY2fjak6z3Y=" alt="Dr. Emma Rodriguez" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="padding: 25px;">
+          <h3 style="color: var(--dark-text); font-size: 1.4rem; margin-bottom: 10px;">Dr. Emma Rodriguez</h3>
+          <p style="color: var(--primary); margin-bottom: 10px;">PhD in Data Science, Harvard</p>
+          <p style="color: var(--dark-text-secondary); font-size: 0.9rem;">Lead Data Scientist at Amazon, pioneer in big data analytics with numerous industry awards.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      // Add hover effect to instructor cards
+      document.querySelectorAll('[style*="var(--dark-card)"]').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'translateY(-10px)';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'translateY(0)';
+        });
+      });
+    </script>
+  </section>
+
+
+  <!-- Partners Section -->
+  <section style="padding: 80px 20px; background: var(--dark-bg);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="text-align: center; color: var(--dark-text); font-size: 2.5rem; margin-bottom: 50px;">Our Trusted Partners</h2>
+      
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px;">
+        <!-- Partner logos with hover effect -->
+        <div style="background: var(--dark-card); padding: 30px; border-radius: 10px; transition: transform 0.3s ease;">
+          <img src="https://pngimg.com/d/google_PNG19644.png" alt="Google" style="height: 50px; filter: brightness(0) invert(1); opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+
+        <div style="background: var(--dark-card); padding: 30px; border-radius: 10px; transition: transform 0.3s ease;">
+          <img src="https://pnghunter.com/get-logo.php?id=3839" alt="Microsoft" style="height: 50px; filter: brightness(0) invert(1); opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+
+        <div style="background: var(--dark-card); padding: 30px; border-radius: 10px; transition: transform 0.3s ease;">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/019/766/240/small/amazon-logo-amazon-icon-transparent-free-png.png" alt="Amazon" style="height: 50px; filter: brightness(0) invert(1); opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+
+        <div style="background: var(--dark-card); padding: 30px; border-radius: 10px; transition: transform 0.3s ease;">
+          <img src="https://pngimg.com/uploads/ibm/ibm_PNG19658.png" alt="IBM" style="height: 50px; filter: brightness(0) invert(1); opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Add hover effects to partner logos
+      document.querySelectorAll('[style*="var(--dark-card)"]').forEach(partner => {
+        partner.addEventListener('mouseenter', () => {
+          partner.style.transform = 'scale(1.05)';
+          partner.querySelector('img').style.opacity = '1';
+        });
+        partner.addEventListener('mouseleave', () => {
+          partner.style.transform = 'scale(1)';
+          partner.querySelector('img').style.opacity = '0.7';
+        });
+      });
+    </script>
+  </section>
+
+  <!-- Contact Section -->
+  <section style="padding: 80px 20px; background: var(--dark-bg);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 50px; flex-wrap: wrap;">
+      
+      <!-- Contact Form -->
+      <div style="flex: 1; min-width: 300px;">
+        <h2 style="color: var(--dark-text); font-size: 2.5rem; margin-bottom: 30px;">Get in Touch</h2>
+        <form style="display: flex; flex-direction: column; gap: 20px;">
+          <input type="text" placeholder="Your Name" style="padding: 15px; border-radius: 8px; border: 1px solid var(--dark-border); background: var(--dark-card); color: var(--dark-text); font-size: 1rem;">
+          
+          <input type="email" placeholder="Your Email" style="padding: 15px; border-radius: 8px; border: 1px solid var(--dark-border); background: var(--dark-card); color: var(--dark-text); font-size: 1rem;">
+          
+          <textarea placeholder="Your Message" rows="5" style="padding: 15px; border-radius: 8px; border: 1px solid var(--dark-border); background: var(--dark-card); color: var(--dark-text); font-size: 1rem; resize: vertical;"></textarea>
+          
+          <button type="submit" style="padding: 15px 30px; background: var(--primary); color: var(--dark-text); border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: 0.3s;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Animated Book Image -->
+      <div style="flex: 1; min-width: 300px; display: flex; justify-content: center; align-items: center;">
+        <img src="https://images.vexels.com/media/users/3/205462/isolated/preview/87b34912ed9f8d2900754c38220faac6-pile-of-books-illustration.png" alt="Book" style="width: 80%; max-width: 400px;" id="floatingBook">
+      </div>
+
+    </div>
+
+    <script>
+      // Floating animation for book
+      gsap.to("#floatingBook", {
+        y: 20,
+        duration: 2,
+        yoyo: true,
+        repeat: -1,
+        ease: "power1.inOut"
+      });
+
+      // Form input animations
+      const inputs = document.querySelectorAll('input, textarea');
+      inputs.forEach(input => {
+        input.addEventListener('focus', () => {
+          input.style.borderColor = 'var(--primary)';
+          input.style.boxShadow = '0 0 0 2px var(--sc-primary)';
+        });
+        input.addEventListener('blur', () => {
+          input.style.borderColor = 'var(--dark-border)';
+          input.style.boxShadow = 'none';
+        });
+      });
+    </script>
+  </section>
+
+
+  <!-- Founders Section -->
+  <section style="padding: 80px 20px; background: var(--dark-bg);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="text-align: center; color: var(--dark-text); font-size: 2.5rem; margin-bottom: 50px;">Created By</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+        
+        <!-- Saqib -->
+        <div class="founder-card" style="background: var(--dark-card); border-radius: 15px; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;" onclick="openModal('saqib')">
+          <div style="height: 280px; overflow: hidden;">
+            <img src="assets/images/saqib.png" alt="Saqib" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div style="padding: 20px;">
+            <h3 style="color: var(--dark-text); font-size: 1.4rem; margin-bottom: 10px;">Saqib</h3>
+            <p style="color: var(--dark-text-secondary);">Co-Founder & CEO</p>
+          </div>
+        </div>
+
+        <!-- Sayed Muzamil -->
+        <div class="founder-card" style="background: var(--dark-card); border-radius: 15px; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;" onclick="openModal('sayedMuzamil')">
+          <div style="height: 280px; overflow: hidden;">
+            <img src="assets/images/Smuzamil.png" alt="Sayed Muzamil" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div style="padding: 20px;">
+            <h3 style="color: var(--dark-text); font-size: 1.4rem; margin-bottom: 10px;">Sayed Muzamil</h3>
+            <p style="color: var(--dark-text-secondary);">Co-Founder & CTO</p>
+          </div>
+        </div>
+
+        <!-- Muzamil Khan -->
+        <div class="founder-card" style="background: var(--dark-card); border-radius: 15px; overflow: hidden; cursor: pointer; transition: transform 0.3s ease;" onclick="openModal('muzamilKhan')">
+          <div style="height: 280px; overflow: hidden;">
+            <img src="assets/images/muzamil.jpg" alt="Muzamil Khan" style="width: 100%; height: 100%; object-fit: contain;">
+          </div>
+          <div style="padding: 20px;">
+            <h3 style="color: var(--dark-text); font-size: 1.4rem; margin-bottom: 10px;">Muzamil Khan</h3>
+            <p style="color: var(--dark-text-secondary);">Co-Founder & COO</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="founderModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
+      <div style="position: relative; background: var(--dark-card); max-width: 600px; margin: 50px auto; padding: 30px; border-radius: 15px;">
+        <button onclick="closeModal()" style="position: absolute; right: 20px; top: 20px; background: none; border: none; color: var(--dark-text); font-size: 24px; cursor: pointer;">&times;</button>
+        <div id="modalContent" style="color: var(--dark-text);">
+          <!-- Content will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Founder details
+      const founderDetails = {
+        saqib: {
+          name: "Saqib",
+          role: "Co-Founder & CEO",
+          bio: "A visionary leader with extensive experience in educational technology. Saqib has led multiple successful startups and is passionate about making education accessible to everyone.",
+          achievements: "• MBA from Harvard Business School\n• Former Product Manager at EdTech giants\n• Featured in Forbes 30 Under 30"
+        },
+        sayedMuzamil: {
+          name: "Sayed Muzamil",
+          role: "Co-Founder & CTO",
+          bio: "A technical genius with a deep understanding of modern web technologies. Sayed Muzamil has architected scalable solutions for various educational platforms.",
+          achievements: "• MS in Computer Science from Stanford\n• Led development teams at major tech companies\n• Multiple patents in EdTech"
+        },
+        muzamilKhan: {
+          name: "Muzamil Khan",
+          role: "Co-Founder & COO",
+          bio: "An operations expert with a keen eye for process optimization. Muzamil Khan ensures smooth functioning of all aspects of AsanIlm.",
+          achievements: "• Operations experience at Fortune 500 companies\n• Specialized in scaling educational platforms\n• Expert in international education systems"
+        }
+      };
+
+      // Add hover effect to founder cards
+      document.querySelectorAll('.founder-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'translateY(-10px)';
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'translateY(0)';
+        });
+      });
+
+      function openModal(founderId) {
+        const founder = founderDetails[founderId];
+        const modal = document.getElementById('founderModal');
+        const content = document.getElementById('modalContent');
+        
+        content.innerHTML = `
+          <h2 style="font-size: 2rem; margin-bottom: 20px;">${founder.name}</h2>
+          <h3 style="color: var(--primary); margin-bottom: 15px;">${founder.role}</h3>
+          <p style="margin-bottom: 20px; line-height: 1.6;">${founder.bio}</p>
+          <h4 style="margin-bottom: 10px;">Key Achievements:</h4>
+          <pre style="color: var(--dark-text-secondary); line-height: 1.4;">${founder.achievements}</pre>
+        `;
+        
+        modal.style.display = 'block';
+      }
+
+      function closeModal() {
+        document.getElementById('founderModal').style.display = 'none';
+      }
+
+      // Close modal when clicking outside
+      window.onclick = function(event) {
+        const modal = document.getElementById('founderModal');
+        if (event.target == modal) {
+          closeModal();
+        }
+      }
+    </script>
+  </section>
+
+
+  <!-- CTA -->
+  <section style="padding:100px 20px; background:linear-gradient(145deg, #0f0f0f, #1a1a1a); text-align:center;">
+    <h2 style="font-size:2.8rem;">Join AsanIlm Today</h2>
+    <p style="color:#aaa; margin:20px auto; max-width:600px;">Transform your future with our comprehensive education platform. Start learning or teaching today.</p>
+    <button style="padding:16px 32px; font-size:1.1rem; background:#ffffff0a; border:1px solid #444; border-radius:10px; color:#fff; cursor:pointer; transition:0.3s;">Get Started Now</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: var(--dark-bg); padding: 80px 0 30px; color: var(--dark-text-secondary);">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 60px;">
+        
+        <!-- Company Info -->
+        <div>
+          <img src="assets/images/Logo.jpg" alt="AsanIlm Logo" style="height: 150px; margin-bottom: 20px;">
+          <p style="line-height: 1.6; margin-bottom: 20px;">AsanIlm is dedicated to making education accessible and engaging for everyone. Our platform connects learners with expert educators worldwide.</p>
+          <div style="display: flex; gap: 15px;">
+            <a href="#" style="color: var(--dark-text-secondary); transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" style="color: var(--dark-text-secondary); transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" style="color: var(--dark-text-secondary); transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" style="color: var(--dark-text-secondary); transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 style="color: var(--dark-text); margin-bottom: 20px; font-size: 1.2rem;">Quick Links</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">About Us</a></li>
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">Our Courses</a></li>
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">Become a Teacher</a></li>
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">Career</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 style="color: var(--dark-text); margin-bottom: 20px; font-size: 1.2rem;">Support</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">Help Center</a></li>
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">Terms of Service</a></li>
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">Privacy Policy</a></li>
+            <li style="margin-bottom: 12px;"><a href="#" style="color: var(--dark-text-secondary); text-decoration: none; transition: 0.3s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--dark-text-secondary)'">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 style="color: var(--dark-text); margin-bottom: 20px; font-size: 1.2rem;">Contact Info</h4>
+          <p style="margin-bottom: 12px;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--primary);"></i> 123 Education Street, Learning City</p>
+          <p style="margin-bottom: 12px;"><i class="fas fa-phone" style="margin-right: 10px; color: var(--primary);"></i> +1 234 567 8900</p>
+          <p style="margin-bottom: 12px;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary);"></i> info@asanilm.com</p>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div style="border-top: 1px solid var(--dark-border); padding-top: 30px; text-align: center;">
+        <p>&copy; 2025 AsanIlm. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    // Hero 3D Animations
+    gsap.to("#heroTitle", {
+      duration: 1,
+      scale: 1,
+      rotateY: 0,
+      opacity: 1,
+      ease: "back.out(1.7)",
+      delay: 0.3
+    });
+
+    gsap.to("#heroSub", {
+      duration: 1,
+      y: 0,
+      opacity: 1,
+      ease: "power2.out",
+      delay: 0.6
+    });
+
+    gsap.to("#heroBtn", {
+      duration: 1,
+      opacity: 1,
+      scale: 1,
+      ease: "back.out(1.5)",
+      delay: 0.9
+    });
+
+    // Scroll reveal for features
+    gsap.utils.toArray(".feature").forEach((box, i) => {
+      gsap.from(box, {
+        scrollTrigger: {
+          trigger: box,
+          start: "top 80%"
+        },
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        delay: i * 0.2,
+        ease: "power2.out"
+      });
+    });
+
+    // Scroll reveal for steps
+    gsap.utils.toArray(".step").forEach((el, i) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%"
+        },
+        opacity: 0,
+        scale: 0.8,
+        y: 30,
+        duration: 0.9,
+        delay: i * 0.2,
+        ease: "power3.out"
+      });
+    });
+  </script>
+</body>
+</html>
