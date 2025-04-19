@@ -78,7 +78,7 @@ Features’ list:
 
 Image of the project:
 
-![Home Page](https://github.com/arashactive/mint-lms-laravel/HomePage/HomePage.png)
+![Home Page]([https://github.com/arashactive/mint-lms-laravel/HomePage/HomePage.png](https://github.com/Saqibali2/NasconWebDev/blob/main/HomePage/HomePage.png))
 
 
 
