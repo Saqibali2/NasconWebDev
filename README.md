@@ -64,7 +64,7 @@ Our project is based on the Laravel framework, which partly supports the Livewir
 
 **Who maintains and contributes to the project?**
 
-In case you have any problems or questions, please contact [arashaspx@gmail.com](mailto:arashaspx@gmail.com).
+
 
 Features’ list:
 
@@ -78,7 +78,7 @@ Features’ list:
 
 Image of the project:
 
-![Home Page](https://github.com/arashactive/mint-lms-laravel/raw/main/HomePage/HomePage.png)
+![Home Page](https://github.com/arashactive/mint-lms-laravel/HomePage/HomePage.png)
 
 
 
